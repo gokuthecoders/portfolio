@@ -3,7 +3,90 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vishal Kumar — Full‑Stack MERN Developer</title>
+  <title>Vishal Kumar - Full Stack MERN Developer | React, Node.js, MongoDB Expert</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Vishal Kumar is a passionate Full Stack MERN Developer specializing in React, Node.js, MongoDB, and Express.js. Building modern web applications with focus on backend systems, APIs, and performant frontends.">
+  <meta name="keywords" content="Full Stack Developer, MERN Stack, React Developer, Node.js Developer, MongoDB Developer, JavaScript Developer, Web Developer, Frontend Developer, Backend Developer, API Developer">
+  <meta name="author" content="Vishal Kumar">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vishalcode.com/">
+  <meta property="og:title" content="Vishal Kumar - Full Stack MERN Developer">
+  <meta property="og:description" content="Passionate MERN Developer building modern web apps using React, Node.js, MongoDB, and Express.js.">
+  <meta property="og:image" content="https://portfolio-3v0.pages.dev/assets/vishu_ngtv.jpg">
+  <meta property="og:image:secure_url" content="https://portfolio-3v0.pages.dev/assets/vishu_ngtv.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vishal Kumar - Full Stack MERN Developer">
+  <meta property="og:site_name" content="Vishal Kumar Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.vishalcode.com/">
+  <meta name="twitter:title" content="Vishal Kumar - Full Stack MERN Developer">
+  <meta name="twitter:description" content="Full Stack MERN Developer building APIs and web apps using React, Node.js, MongoDB.">
+  <meta name="twitter:image" content="https://portfolio-3v0.pages.dev/assets/vishu_ngtv.jpg">
+  <meta name="twitter:image:alt" content="Vishal Kumar - Full Stack MERN Developer">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.vishalcode.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+
+  <!-- PWA / Device Meta -->
+  <meta name="theme-color" content="#071018">
+  <meta name="msapplication-TileColor" content="#071018">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vishal Kumar",
+    "jobTitle": "Full Stack MERN Developer",
+    "description": "Passionate Full Stack MERN Developer specializing in React, Node.js, MongoDB, and Express.js. Building modern web applications with focus on backend systems, APIs, and performant frontends.",
+    "url": "https://www.vishalcode.com/",
+    "image": "https://portfolio-3v0.pages.dev/assets/vishu_ngtv.jpg",
+    "sameAs": [
+      "https://gitlab.com/gokuthecoder",
+      "https://t.me/homlanderew/"
+    ],
+    "knowsAbout": [
+      "React.js",
+      "Node.js", 
+      "MongoDB",
+      "Express.js",
+      "JavaScript",
+      "Full Stack Development",
+      "API Development",
+      "Web Development"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sheikhpind",
+      "addressRegion": "Jalandhar",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8434662342",
+      "contactType": "personal",
+      "email": "vishu127001@gmail.com"
+    }
+  }
+  </script>
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -760,7 +843,7 @@ const projects = [
     desc: 'A movie & TV data explorer using IMDB and TMDB APIs, allowing users to search titles, view ratings, and explore genres.',
     tags: ['React', 'Vite'],
     img: './assets/imdb-tmdb-api.webp',
-    demo: 'https://imdb-tmdb-api.example.com',
+    demo: 'https://imdb-tmdb-api-worker.yuvrajkumar120120018809.workers.dev/imdb/tt0401916',
     github: 'https://gitlab.com/gokuthecoder/imdb-tmdb-api-worker'
   },
   {
@@ -840,16 +923,16 @@ const projects = [
     // Fill skill bars when visible
     const fills = document.querySelectorAll('.bar');
     if (fills.length > 0) {
-      const barObserver = new IntersectionObserver((ents)=>{
-        ents.forEach(e=>{
-          if(e.isIntersecting){
-            const val = e.target.dataset.fill || 60;
-            const f = e.target.querySelector('.fill');
+    const barObserver = new IntersectionObserver((ents)=>{
+      ents.forEach(e=>{
+        if(e.isIntersecting){
+          const val = e.target.dataset.fill || 60;
+          const f = e.target.querySelector('.fill');
             if (f) f.style.width = val + '%';
-          }
-        })
-      },{threshold:0.3});
-      fills.forEach(b=>barObserver.observe(b));
+        }
+      })
+    },{threshold:0.3});
+    fills.forEach(b=>barObserver.observe(b));
     }
 
     // Years of experience counter
@@ -869,83 +952,83 @@ const projects = [
     // Smooth micro-interactions: hover on profile tilt
     const profile = document.getElementById('profilePhoto');
     if (profile) {
-      profile.addEventListener('mousemove', e=>{
-        const r = profile.getBoundingClientRect();
-        const dx = (e.clientX - r.left - r.width/2)/r.width*8;
-        const dy = (e.clientY - r.top - r.height/2)/r.height*8;
-        profile.style.transform = `perspective(800px) rotateX(${ -dy }deg) rotateY(${ dx }deg)`;
-      });
-      profile.addEventListener('mouseleave', ()=>profile.style.transform='');
+    profile.addEventListener('mousemove', e=>{
+      const r = profile.getBoundingClientRect();
+      const dx = (e.clientX - r.left - r.width/2)/r.width*8;
+      const dy = (e.clientY - r.top - r.height/2)/r.height*8;
+      profile.style.transform = `perspective(800px) rotateX(${ -dy }deg) rotateY(${ dx }deg)`;
+    });
+    profile.addEventListener('mouseleave', ()=>profile.style.transform='');
     }
 
     // Theme toggle (dark/light) — simple inversion for demo
     const themeToggle = document.getElementById('themeToggle');
     if (themeToggle) {
-      themeToggle.addEventListener('click', ()=>{
-        document.documentElement.classList.toggle('light');
-        if(document.documentElement.classList.contains('light')){
-          document.body.style.background = '#f5f8fb'; document.body.style.color = '#06111a';
-        } else { document.body.style.background = ''; document.body.style.color = ''; }
-      });
+    themeToggle.addEventListener('click', ()=>{
+      document.documentElement.classList.toggle('light');
+      if(document.documentElement.classList.contains('light')){
+        document.body.style.background = '#f5f8fb'; document.body.style.color = '#06111a';
+      } else { document.body.style.background = ''; document.body.style.color = ''; }
+    });
     }
 
     // Contact form — simple client validation and mailto fallback
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-      contactForm.addEventListener('submit', (e)=>{
-        e.preventDefault();
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-        if(!name||!email||!message){ alert('Please complete all fields'); return; }
-        // For production, integrate EmailJS or your server endpoint. Fallback: mailto
-        const subject = encodeURIComponent(`Portfolio message from ${name}`);
-        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-        window.location.href = `mailto:vishalkr12012001@gmail.com?subject=${subject}&body=${body}`;
-      });
+    contactForm.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name||!email||!message){ alert('Please complete all fields'); return; }
+      // For production, integrate EmailJS or your server endpoint. Fallback: mailto
+      const subject = encodeURIComponent(`Portfolio message from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:vishalkr12012001@gmail.com?subject=${subject}&body=${body}`;
+    });
     }
 
     // Download CV button — creates a blob from plain text or uses an existing PDF link
     const downloadCvBtn = document.getElementById('downloadCv');
     if (downloadCvBtn) {
       downloadCvBtn.addEventListener('click', ()=>{
-        // If you have a hosted PDF use its URL. Here we'll create a small demo text PDF link placeholder.
-        const link = document.createElement('a');
-        link.href = './assets/Vishal_Kumar_CV.pdf'; // canvas file path — may work in the editor environment
-        link.download = 'Vishal_Kumar_CV.pdf'; // desired filename
-        document.body.appendChild(link); link.click(); link.remove();
-      });
+      // If you have a hosted PDF use its URL. Here we'll create a small demo text PDF link placeholder.
+      const link = document.createElement('a');
+      link.href = './assets/Vishal_Kumar_CV.pdf'; // canvas file path — may work in the editor environment
+      link.download = 'Vishal_Kumar_CV.pdf'; // desired filename
+      document.body.appendChild(link); link.click(); link.remove();
+    });
     }
 
     // PDF extraction using pdf.js — reads first N pages and extracts text
     const pdfInput = document.getElementById('pdfInput');
     const pdfOutput = document.getElementById('pdfOutput');
     if (pdfInput && pdfOutput) {
-      pdfInput.addEventListener('change', async (e)=>{
-        const file = e.target.files[0];
-        if(!file) return;
-        pdfOutput.textContent = 'Reading PDF...';
+    pdfInput.addEventListener('change', async (e)=>{
+      const file = e.target.files[0];
+      if(!file) return;
+      pdfOutput.textContent = 'Reading PDF...';
         try {
-          const arrayBuffer = await file.arrayBuffer();
-          const loadingTask = pdfjsLib.getDocument({data:arrayBuffer});
-          const pdf = await loadingTask.promise;
-          let fullText='';
-          const n = Math.min(pdf.numPages, 6); // limit pages for speed
-          for(let i=1;i<=n;i++){
-            const page = await pdf.getPage(i);
-            const content = await page.getTextContent();
-            const strings = content.items.map(i=>i.str);
-            fullText += strings.join(' ') + '\n\n';
-          }
-          pdfOutput.textContent = fullText.slice(0,3000) + (fullText.length>3000? '...': '');
-          // Try to auto-fill some fields from parsed text (very naive)
-          if(/email\s*[:\-]?\s*([\w.+-]+@[\w-]+\.[\w.-]+)/i.test(fullText)){
-            const em = fullText.match(/email\s*[:\-]?\s*([\w.+-]+@[\w-]+\.[\w.-]+)/i)[1];
+      const arrayBuffer = await file.arrayBuffer();
+      const loadingTask = pdfjsLib.getDocument({data:arrayBuffer});
+      const pdf = await loadingTask.promise;
+      let fullText='';
+      const n = Math.min(pdf.numPages, 6); // limit pages for speed
+      for(let i=1;i<=n;i++){
+        const page = await pdf.getPage(i);
+        const content = await page.getTextContent();
+        const strings = content.items.map(i=>i.str);
+        fullText += strings.join(' ') + '\n\n';
+      }
+      pdfOutput.textContent = fullText.slice(0,3000) + (fullText.length>3000? '...': '');
+      // Try to auto-fill some fields from parsed text (very naive)
+      if(/email\s*[:\-]?\s*([\w.+-]+@[\w-]+\.[\w.-]+)/i.test(fullText)){
+        const em = fullText.match(/email\s*[:\-]?\s*([\w.+-]+@[\w-]+\.[\w.-]+)/i)[1];
             const emailField = document.querySelector('#email');
             if (emailField) emailField.value = em;
-          }
-          if(/\+?\d{10,15}/.test(fullText)){
-            const ph = fullText.match(/\+?\d{10,15}/)[0];
+      }
+      if(/\+?\d{10,15}/.test(fullText)){
+        const ph = fullText.match(/\+?\d{10,15}/)[0];
             const nameField = document.querySelector('#name');
             if (nameField) nameField.value = nameField.value || 'Vishal Kumar';
           }
@@ -959,19 +1042,19 @@ const projects = [
     // Particles (simple animated dots)
     const particlesEl = document.querySelector('.particles');
     if (particlesEl) {
-      for(let i=0;i<18;i++){
-        const d = document.createElement('div'); d.style.position='absolute'; d.style.width='6px'; d.style.height='6px'; d.style.borderRadius='50%';
-        d.style.background = `linear-gradient(180deg, ${i%2? 'rgba(0,212,255,0.8)':'rgba(57,255,20,0.7)'}, rgba(255,255,255,0.05))`;
-        d.style.left = Math.random()*80+'%'; d.style.top = Math.random()*80+'%'; d.style.opacity = 0.9; d.style.filter='blur(2px)';
-        d.style.transform = `translate(-50%,-50%) scale(${0.5+Math.random()})`;
-        particlesEl.appendChild(d);
-        // animate
-        (function(el,delay){
-          function anim(){
-            el.animate([{transform:`translate(-50%,-50%) translateY(0px)`,opacity:0.9},{transform:`translate(-50%,-50%) translateY(-10px)`,opacity:0.6},{transform:`translate(-50%,-50%) translateY(0px)`,opacity:0.9}],{duration:4000+Math.random()*3000,iterations:Infinity,delay:delay});
-          }
-          anim();
-        })(d, Math.random()*2000);
+    for(let i=0;i<18;i++){
+      const d = document.createElement('div'); d.style.position='absolute'; d.style.width='6px'; d.style.height='6px'; d.style.borderRadius='50%';
+      d.style.background = `linear-gradient(180deg, ${i%2? 'rgba(0,212,255,0.8)':'rgba(57,255,20,0.7)'}, rgba(255,255,255,0.05))`;
+      d.style.left = Math.random()*80+'%'; d.style.top = Math.random()*80+'%'; d.style.opacity = 0.9; d.style.filter='blur(2px)';
+      d.style.transform = `translate(-50%,-50%) scale(${0.5+Math.random()})`;
+      particlesEl.appendChild(d);
+      // animate
+      (function(el,delay){
+        function anim(){
+          el.animate([{transform:`translate(-50%,-50%) translateY(0px)`,opacity:0.9},{transform:`translate(-50%,-50%) translateY(-10px)`,opacity:0.6},{transform:`translate(-50%,-50%) translateY(0px)`,opacity:0.9}],{duration:4000+Math.random()*3000,iterations:Infinity,delay:delay});
+        }
+        anim();
+      })(d, Math.random()*2000);
       }
     }
 
@@ -980,7 +1063,7 @@ const projects = [
 
     // Mobile navigation functionality - Simplified and robust
     document.addEventListener('DOMContentLoaded', function() {
-      const hamb = document.getElementById('hamburger');
+    const hamb = document.getElementById('hamburger');
       const mobileNav = document.getElementById('mobileNav');
       const closeMobileNav = document.getElementById('closeMobileNav');
       
@@ -1122,16 +1205,8 @@ const projects = [
           window.addEventListener('resize', resizeCanvas);
         }
         
-        // Test click immediately
-        setTimeout(() => {
-          console.log('🧪 Testing hamburger click...');
-          hamb.click();
-          setTimeout(() => {
-            mobileNav.classList.remove('show');
-            document.body.style.overflow = '';
-            console.log('🧪 Test complete - hamburger should work!');
-          }, 1000);
-        }, 500);
+        // Mobile navigation setup complete
+        console.log('✅ Mobile navigation ready!');
         
       } else {
         console.error('❌ Mobile navigation elements not found!');
